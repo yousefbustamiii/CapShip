@@ -66,7 +66,7 @@ export async function runPro(licenseArg?: string): Promise<void> {
   console.log();
   console.log("  " + kleur.bold("Next steps:"));
   console.log();
-  console.log("  " + kleur.cyan("cd client && npm install && npm run build && npx cap copy"));
+  console.log("  " + kleur.cyan("Please follow the README.md in the project root to get started."));
   console.log();
   console.log("  Start developing:");
   console.log();
@@ -83,7 +83,7 @@ export async function runPro(licenseArg?: string): Promise<void> {
   console.log();
   console.log("  " + kleur.dim("Build your app. We'll handle the foundation."));
   console.log();
-  console.log("  " + kleur.blue().underline("capship.org/docs"));
+  console.log("  " + kleur.blue().underline("capship.org/what-you-get"));
   console.log();
   clack.outro(kleur.green("Happy shipping ✓"));
 }

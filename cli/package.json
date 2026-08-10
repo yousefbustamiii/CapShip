@@ -1,6 +1,6 @@
 {
   "name": "capship",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ship your Capacitor app faster.",
   "type": "module",
   "bin": {
@@ -17,7 +17,12 @@
     "dev": "tsup --watch",
     "lint": "tsc --noEmit"
   },
-  "keywords": ["capacitor", "mobile", "boilerplate", "cli"],
+  "keywords": [
+    "capacitor",
+    "mobile",
+    "boilerplate",
+    "cli"
+  ],
   "dependencies": {
     "@clack/prompts": "^1.7.0",
     "fflate": "^0.8.3",

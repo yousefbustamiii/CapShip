@@ -29,7 +29,7 @@ export async function runFree(): Promise<void> {
   console.log();
   console.log("  " + kleur.bold("Your app is ready ✓"));
   console.log();
-  console.log("  " + kleur.cyan("cd client && npm install && npm run build && npx cap copy"));
+  console.log("  " + kleur.cyan("Please follow the README.md in the project root to get started."));
   console.log();
   console.log("  Native:");
   console.log();
@@ -44,7 +44,7 @@ export async function runFree(): Promise<void> {
   console.log("  " + kleur.dim("CapShip Pro includes advanced native features,"));
   console.log("  " + kleur.dim("production patterns, auth flows, and more."));
   console.log();
-  console.log("  " + kleur.blue().underline("capship.org/pro"));
+  console.log("  " + kleur.blue().underline("capship.org/#pricing"));
   console.log();
   clack.outro(kleur.green("Happy shipping ✓"));
 }
