@@ -1,0 +1,35 @@
+{
+  "name": "capship-server",
+  "compatibility_date": "2024-11-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "src/index.ts",
+
+  "rules": [
+    { "type": "Text", "globs": ["**/*.html"], "fallthrough": false }
+  ],
+
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "capship-db",
+      "database_id": "df5dcaae-9e17-4630-b973-61b8d273e6d4",
+      "migrations_dir": "migrations"
+    }
+  ],
+
+  "r2_buckets": [
+    {
+      "binding": "R2",
+      "bucket_name": "capship-bundles",
+      "preview_bucket_name": "capship-bundles-preview"
+    }
+  ],
+
+  "vars": {
+    "ENVIRONMENT": "production",
+    "R2_ACCOUNT_ID": "f0c65f84e623d9bb67986e01a449f6d6",
+    "R2_BUCKET": "capship-bundles",
+    "POLAR_ORGANIZATION_ID": "30457f99-71cd-417f-919b-4d0027fef355",
+    "RESEND_FROM_EMAIL": "CapShip <licenses@capship.org>"
+  }
+}
