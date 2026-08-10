@@ -15,11 +15,7 @@ webhooksRouter.post("/polar", async (c) => {
 
   const event = await verifyPolarWebhook(rawBody, headers, c.env.POLAR_WEBHOOK_SECRET);
 
-  c.executionCtx.waitUntil(
-    processVerifiedWebhookEvent(c.env, event).catch((err: unknown) => {
-      console.error("[webhook/polar]", err);
-    }),
-  );
+  await processVerifiedWebhookEvent(c.env, event);
 
-  return c.json({ received: true }, 202);
+  return c.json({ received: true }, 200);
 });

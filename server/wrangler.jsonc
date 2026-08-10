@@ -31,5 +31,11 @@
     "R2_BUCKET": "capship-bundles",
     "POLAR_ORGANIZATION_ID": "30457f99-71cd-417f-919b-4d0027fef355",
     "RESEND_FROM_EMAIL": "CapShip <licenses@capship.org>"
+  },
+  "observability": {
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true
+    }
   }
 }
